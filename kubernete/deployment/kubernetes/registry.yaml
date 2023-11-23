@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: regcred
+  namespace: laravel-kubectl
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiJrYXdzYXJwb2x5Z29uIiwicGFzc3dvcmQiOiJ6YTNrU0BzIUFEUlhUYVciLCJlbWFpbCI6Imthd3Nhci5wb2x5Z29udGVjaEBnbWFpbC5jb20iLCJhdXRoIjoiYTJGM2MyRnljRzlzZVdkdmJqcDZZVE5yVTBCeklVRkVVbGhVWVZjPSJ9fX0=
+type: kubernetes.io/dockerconfigjson

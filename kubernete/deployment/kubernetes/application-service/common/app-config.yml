@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: application-service
+  namespace: laravel-kubectl
+data:
+  APP_NAME: "laravel Application Service"
+  APP_ENV: "production"
+  APP_DEBUG: "true"
+  APP_KEY: "base64:ts51T0Zxn6cfWNE1AEabuaT26lcumGVfaLTbuAprOZ4="
+  # Once you have an external URL for your application, you can add it here.
+  APP_URL: "http://laravelkubernet.local"
+
+  # Update the LOG_CHANNEL to stdout for Kubernetes
+  LOG_CHANNEL: "stdout"
+  LOG_LEVEL: "debug"
+  DB_CONNECTION: "mysql"
+  DB_HOST: "127.0.0.1"
+
+  BROADCAST_DRIVER: "log"
+  CACHE_DRIVER: "file"
+  FILESYSTEM_DRIVER: "local"
+  QUEUE_CONNECTION: "sync"

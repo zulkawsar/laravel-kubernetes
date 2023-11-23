@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: application-service-webserver
+  namespace: laravel-kubectl
+spec:
+  selector:
+    tier: application-backend
+    layer: webserver
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
